@@ -1,0 +1,11 @@
+<ul>
+  <% @businesses.each do |b| %>
+    <li class="business">
+      <%= link_to b.name, b %>
+    </li>
+  <% end %>
+<li class="business">
+  <%= link_to 'New Business', new_business_path %>  
+</li>
+
+</ul>
